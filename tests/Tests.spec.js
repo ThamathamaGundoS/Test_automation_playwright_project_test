@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 import { LoginPage } from "../pages/UI/ui_login.js";
-const users = require('./users.json');
+import users from '../Utilities/Utilities.json' assert { type: 'json' };
 
 test.describe('SauceDemo Login Tests', () => {
   for (const user of users) {
